@@ -1,0 +1,40 @@
+Windows 10, git bush
+
+2) Создать папку                                                                                : mkdir folder_1	
+3) Зайти в папку                                                                                : cd folder_1
+4) Создать 3 папки                                                                              : mkdir folder_1 folder_2 folder_3
+5) Зайти в любоую папку                                                                         : cd /e/courses/folder_1/folder_1
+6) Создать 5 файлов (3 txt, 2 json)                                                             : touch /e/courses/folder_1/{text1.txt,text2.txt,text3.txt,json1.json,json2.json}
+7) Создать 3 папки                                                                              : mkdir -p {1,2,3}
+8) Вывести список содержимого папки                                                             : ls
+9) + Открыть любой txt файл                                                                     : vim text1.txt
+10) + написать туда что-нибудь, любой текст.                                                    : press "i", enter "first homework"
+11) + сохранить и выйти.                                                                        : press "esc", press "shift + :", enter "wq", press "enter"
+12) Выйти из папки на уровень выше                                                              : cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.                        : mv text1.txt text2.txt /e/courses
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.                        : cp text1.txt text2.txt /e/courses/folder_1
+15) Найти файл по имени                                                                         : find . -name '*.json' (поиск в текущем каталоге)
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.          : grep -o текст /e/courses/folder_1/text1.txt (вывод всех слов "текст" в файле)
+                                                                                                  grep -o текст /e/courses/folder_1/text1.txt | wc -l (вывод кол-ва слов "текст" в файле)
+17) вывести несколько первых строк из текстового файла                                          : head -n 2 /e/courses/folder_1/text1.txt (вывод первых двух строк)
+18) вывести несколько последних строк из текстового файла                                       : tail -n 2 /e/courses/folder_1/text1.txt (вывод последних двух строк)
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.              +
+20) вывести дату и время                                                                        : date
+
+
+* 
+1)curl 'http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000'
+
+2): /c/Users/Admin/Desktop/script.txt
+
+
+Script:
+#!/bin/bash
+cd /e/courses/folder_1;
+mkdir folder_1 folder_2 folder_3;
+touch ./{text1.txt,text2.txt,text3.txt,json1.json,json2.json};
+cd /e/courses/folder_1;
+mkdir -p {1,2,3};
+ls;
+mv text1.txt text2.txt /e/courses
+
